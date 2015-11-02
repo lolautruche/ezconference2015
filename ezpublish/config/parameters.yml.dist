@@ -12,7 +12,8 @@ parameters:
 
     # Settings for database backend used by Doctrine DBAL
     # In turn used for Content Repository Persistence, and default database powered search engine
-    database_driver: pdo_mysql
+    database_driver: pdo_sqlite
+    database_path: %kernel.root_dir%/../ezplatform.sqlite
     database_host: localhost
     database_port: ~
     database_name: ezplatform
